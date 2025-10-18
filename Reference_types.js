@@ -57,7 +57,47 @@ let arra = [10,20];
 let Ar=arra.map((num) =>{
     console.log(arra);
     return num*num;
-})    //this ) executes itself without calling functions
-console.log(Ar);
+}) 
+   //this ) executes itself without calling functions
+   console.log(Ar);
+
+//Filter function-It filter outs the certain values and returns true or false
+let fl=[10,11,12,14]
+let even=fl.filter((num) =>{
+    if(num%2==0){  //can also write return num%2;
+        return true;
+    }
+    else{
+        return false;
+    }
+})
+console.log(even);
+
+//Reduce:suppose you have array [10,20]then we have to do some operations like sum of it then reduce function is used
+
+let rd=[20,30,40,10];
+const sum=rd.reduce((acc ,current)=>{
+ return acc+current;
+},0);
+console.log(sum);
+
+//Sort
+rd.sort();console.log(rd);
+
+//Arrays with functions
+const fA=[10,20,30];
+function getSum(fA){  //same arrow function let getSum=(fA)=>{}
+    let len=fA.length;
+    let sum=0;
+    for(let i=0;i<len;i++){  //using forEach loop fA.forEach((val) =>{
+      //  sum=sum+val})
+        sum=sum+fA[i];
+    }
+    return sum;
+}
+console.log(getSum(fA));
+
+
+
 
 

@@ -7,3 +7,9 @@ while(i<5){
     console.log(i);
     i++;
 }
+
+//For each
+let arr=[20,30,40];
+arr.forEach((value,index)=>{
+    console.log("Number",value,"Index",index);
+});
