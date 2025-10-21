@@ -24,3 +24,30 @@ const div= (x,y) => {
 
 }
 console.log(div(10,2));
+
+//Can store function in array
+ let arr=[
+    function sum(a,b){
+        return a+b;
+    },
+    function sub(a,b){
+        return a-b;
+    }
+];
+let first=arr[0];
+console.log(first(2,3));
+
+let obj={
+    age:22,
+    greet: ()=>{
+        console.log("hello");
+    }
+   
+}
+obj.greet();
+
+//Function expression
+let game=function(){
+    console.log("i like only trading");
+}
+game();
