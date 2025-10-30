@@ -1,0 +1,37 @@
+window object is global object..It is created by browser
+-->Everything comes under window object. even DOM and everything
+It is in top of hierarchy..CAn control visible window browser
+
+In window there is :1.DOM
+2.:BOM(Browser Object Model)
+3.:Js core
+
+DOM-Document Object Model
+->Every html code is converted in Js object which is document and make tree like structure.It have many node.many node make tree like sturcture whiich is DOM
+
+BOM:
+Every interaction with browser leaving html content  behind.
+
+
+
+---------DOM
+ACCESS METHOD
+method :to fetch id simply do: document.getElementById("idname");
+To fetch by tag name :
+->Syntax:document.getElementByTagname('p')
+
+query Selector:
+Can select using . and # to access element;
+->Syntax:document.querySelector('.p');
+
+Using $0 can select and paste elements of html 
+
+TO UPDATE  existing ELEMENTS
+-1:innerHTML:under html elements of tag can  do get or set 
+Example:button.innerHTML //then all the tag of button is seen
+     button.innerHTML='<p>Hello</p> // paragraph of it is changed
+
+
+2.outerHTML
+3.text-content
+4.inner-text
