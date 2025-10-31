@@ -35,3 +35,20 @@ Example:button.innerHTML //then all the tag of button is seen
 2.outerHTML
 3.text-content
 4.inner-text
+
+Example :
+let element=document.querySelector('#fdiv');
+element.innerText //This shows only what is displayed in browser
+
+element.textContent //Shows all the activities of html code
+
+
+Add element in html
+let foot=document.createElement('footer');//footer is created
+foot.textContent="this is final part"
+let bdyTag=document.querySelector('body');
+
+bdyTag.appendChild(foot) // to add foot in body..your child is added at last
+
+Note:removeChild()  //opposite of appendChild
+
